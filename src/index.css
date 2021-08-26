@@ -15,7 +15,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-color: rgba(191, 241, 226, 0.5); */
   background: no-repeat center/100% url("./img/phonebook.jpg");
 }
 
