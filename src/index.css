@@ -15,7 +15,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: no-repeat center/100% url("./img/phonebook.jpg");
+  background: url("./img/phonebook.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  body {
+    background: url("./img/phone.jpg");
+    background-repeat: repeat;
+  }
 }
 
 code {
