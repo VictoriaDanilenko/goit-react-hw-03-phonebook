@@ -26,7 +26,7 @@ const ContactForm = ({ addContact }) => {
 
     addContact(user);
     if (state.name && state.number) {
-      setState({ name: '', number: '' });
+      setState({ ...initialState });
     }
   };
 

@@ -12,11 +12,19 @@ const ListItem = styled.li`
     margin-bottom: 15px;
   }
   &:hover {
-    background-color: teal;
+    background-color: #f8f4fa;
     border: 1px solid #a75ee1;
     box-shadow: 5px 5px 11px 2px rgba(143, 108, 193, 0.45);
   }
+  .listItem_meta {
+    flex-grow: 1;
+    cursor: pointer;
+    @media (min-width: 768px) {
+      position: relative;
+    }
+  }
   .listItem_name {
+    display: flex;
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 3px;
@@ -24,6 +32,23 @@ const ListItem = styled.li`
   .listItem_number {
     font-size: 14px;
     color: #4b4e4f;
+  }
+  .listItem_category {
+    padding: 3px 7px;
+    width: max-content;
+    font-size: 12px;
+    color: #083e2d;
+    border: 1px solid #19b785;
+    border-radius: 15px;
+    @media (max-width: 767px) {
+      margin-top: 3px;
+    }
+    @media (min-width: 768px) {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translate(0, -50%);
+    }
   }
   .listItem_btn {
     width: 40px;
